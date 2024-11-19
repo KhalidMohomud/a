@@ -595,26 +595,48 @@ button:hover {
     top: 60px;
     left: 0;
     right: 0;
-    background-color: #333;
+    background-color: #72f1eb;
     flex-direction: column;
     align-items: center;
     display: none;
+    
 }
 
 .navbar ul {
     flex-direction: column;
+    position: relative;
+    margin-left: 0;
+    
+}
+.navbar li{
+  margin: 10px 0;
+  
+}
+.navbar li a {
+   
+    color: white;
+    position: relative;
+    margin-left: -14rem;
+    font-size: 20px;
+    
+
+
+}
+.navbar li a:hover{
+  background-color: green;
+   width: 100px;
 }
 
-.navbar li {
-    margin: 10px 0;
-}
 
-.buttons {
-    display: none;
-}
 
 .menu-toggle {
     display: flex;
+}
+
+.menu-toggle {
+color: #0e0f0f;
+font-size: xx-large;
+font-weight: bold;
 }
 
 .navbar.active {
@@ -653,6 +675,11 @@ background-color: #d0d0d0;
     }
 
 
+    .hero-content .buttons{
+      position: relative;
+      display: flex;
+      margin-left: 70px;
+    }
     .about-container {
       flex-direction: column;
   }
@@ -672,7 +699,7 @@ background-color: #d0d0d0;
   }
 
     .team-members {
-      flex-direction: column;
+      flex-direction: row;
       gap: 20px;
   }
 
