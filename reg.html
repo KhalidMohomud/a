@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Login Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+ 
+
+
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  position: relative;
+  margin-top:100px;
+}
+
+
+.login-box {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 20px 50px 10px 5px;
+  padding: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.login-box h2 {
+  font-size: 24px;
+  color: #161313;
+  margin-bottom: 10px;
+}
+
+
+
+
+.login-form {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 14px;
+  color: #1f1e1e;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  background-color: #f2f3ad;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.form-group input:focus {
+  border-color: #fa9906;
+  box-shadow: 0 0 5px rgba(37, 117, 252, 0.5);
+}
+
+
+.login-btn {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 16px;
+  background: #fa9906;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.login-btn:hover {
+  background: #fa9906;
+}
+
+
+.options {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.options p {
+  font-size: 14px;
+  color: #666;
+}
+
+.options a {
+  color: #fa9906;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.options a:hover {
+  color: #fa9906;
+}
+
+.forgot-password {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+</style>
+<body>
+
+    <header id="header">
+
+        <div class="logo"> <span style="color: #fa9906;">B</span>aa<span style="color:#fa9906;">i</span>ye</div>
+      
+      <nav class="navbar">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#sections-contect">Contact</a></li>
+              <li><a href="#seccourse">courses</a></li>
+              <li><a href="#about-section">About</a></li>
+          </ul>
+      </nav>
+      <div class="buttons">
+
+          <button class="btnl"><a href="login.html">Login</button></a>
+          <button class="btnr"><a href="reg.html">Register</button></a>
+      </div>
+      
+      </header>
+ <section>
+      <div class="login-wrapper">
+        <div class="login-box">
+          <h2>Login</h2>
+         
+          <form class="login-form">
+            <div class="form-group">
+                <label for="Name">Name</label>
+                <input type="text" id="Name" placeholder="Enter your Name" required>
+              </div>
+              <div class="form-group">
+                <label for="Number">Email</label>
+                <input type="number" id="number" placeholder="Enter your Number" required>
+              </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="Register-btn">Register</button>
+          </form>
+          <div class="options">
+            <p>I have an account! <a href="login.html">Login</a></p>
+            <a href="#" class="forgot-password">Forgot Password?</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  <section>
+    <footer class="footer">
+      <div class="footer-content">
+          <div class="footer-text">
+              © 2024 Baahiye Online Courses. All rights reserved In.
+          </div>
+          <div class="footer-icons">
+              <a href="#" target="_blank" class="icon"><i class="fab fa-whatsapp"></i></a>
+              <a href="#" target="_blank" class="icon"><i class="fab fa-facebook"></i></a>
+              <a href="#" target="_blank" class="icon"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" class="icon"><i class="fab fa-youtube"></i></a>
+          </div>
+      </div>
+  </footer>
+  </section>
+</body>
+</html>
