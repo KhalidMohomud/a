@@ -1,6 +1,9 @@
 .container {
     max-width: 800px;
     margin: 0 auto;
+    position: relative;
+    margin-left: 30px;
+    margin-top: 18rem;
   }
   
   
@@ -17,8 +20,11 @@
   }
   
   .course-details h2 {
-    font-size: 22px;
+    font-size: 30px;
     margin-bottom: 15px;
+    position: relative;
+    margin-left: 9em;
+    color: #fa9906;
   }
   
   .video-container {
@@ -35,7 +41,7 @@
     border: none;
   }
   
-  /* Learning Section */
+  
   .learning-section {
     background: #fff;
     padding: 20px;
@@ -44,9 +50,14 @@
   }
   
   .learning-section h2 {
-    font-size: 22px;
-    margin-bottom: 15px;
+    font-size: 28px;
+    font-weight: bold;
     text-align: center;
+    position: relative;
+    margin-left: 8em;
+    margin-bottom: 100px;
+    color: #fa9906;
+    
   }
   
   .learning-grid {

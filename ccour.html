@@ -6,7 +6,7 @@
   <title>Responsive Course Card</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/decoursex.css">
+  <link rel="stylesheet" href="css/decourse.css">
 
   <style>
  
@@ -20,12 +20,18 @@
   overflow: hidden;
   position: relative;
   margin-left: 65rem;
-  margin-top: 90px;
+  margin-top: -13em;
+  position: fixed;
   
 }
 
-.video-container {
+ .video-container_up {
   width: 100%;
+  height: 50%;
+}
+.video-container_up video {
+  width: 100%;
+
 }
 
 .video-thumbnail {
@@ -33,29 +39,34 @@
   display: block;
 }
 
-.course-details {
-  padding: 20px;
+ .course-information {
+  padding: 5px;
 }
 
-.course-details h3 {
+.course-information h3 {
   margin-bottom: 15px;
-  font-size: 18px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 50px;
   color: #fa9906;
 }
 
-.course-details ul {
+ .course-information ul {
   list-style-type: none;
   padding: 0;
   margin: 0 0 15px;
+   display: flex;
+   flex-wrap: wrap;
+   padding: 5px 5px;
 }
 
-.course-details li {
+.course-information li {
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 17px;
   color: #555;
 }
 
-.course-details button {
+.course-information button {
   width: 100%;
   padding: 10px;
   background-color: #fa9906;
@@ -66,9 +77,9 @@
   cursor: pointer;
 }
 
-.course-details button:hover {
+.course-information button:hover {
   background-color: #fa9906;;
-}
+} 
 
 
 
@@ -107,18 +118,18 @@
 
       
   <div class="course-card">
-    <div class="video-container">
-      <img src="Image/htmlcss.jpg" alt="Course Thumbnail" class="video-thumbnail">
+    <div class="video-container_up">
+      <video src="video1/Recording 2024-11-15 195332.mp4"></video>
     </div>
-    <div class="course-details">
-      <h3>HTML CSS For Professionals Course</h3>
+    <div class="course-information">
+      <h3>HTML CSS  Course</h3>
       <ul>
-        <li>100 Hours and 34 Minutes Of HD videos</li>
+        <li><strong>100 Hours and 34 Minutes Of HD videos </strong></li>
         <li>Access to exclusive Baahiye community</li>
         <li>Certificate of Completion</li>
         <li><strong>USD 100.00 For Life Time Access</strong></li>
       </ul>
-      <button>Login To Enroll</button>
+     <a href="login.html"><button>Login To Enroll</button> </a> 
     </div>
   </div>
 
@@ -131,7 +142,7 @@
           </div>
         </div>
     
-        <!-- What You Will Learn Section -->
+    
         <div class="learning-section">
           <h2>What You Will Learn</h2>
           <div class="learning-grid">
@@ -141,7 +152,7 @@
               <li>✔ Learn Java script</li>
             </ul>
             <ul>
-              <li>✔ Build Advanced Projects</li>
+              <li>✔ Build Responsive Projects </li>
               
               <li>✔ Complete HTML Basics</li>
               <li>✔ Complete HTML Project</li>

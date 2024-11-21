@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Accordion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+   <style>
+    /* Reset and General Styles */
+/* body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+} */
+
+
+.container {
+    width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-top: 110px;
+    margin-left: 0;
+}
+
+.back-button {
+    background-color: #28a745;
+    color: #5c5a46;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.back-button:hover {
+    background-color: #218838;
+}
+
+
+h1 {
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 70px;
+    color: #343a40;
+
+}
+
+
+.accordion {
+    margin-top: 10px;
+}
+
+.section {
+    margin-bottom: 5px;
+}
+
+.accordion-header {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    background-color: #e9ecef;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.accordion-header a{
+    background-color: #fa9906;
+}
+
+.accordion-header:hover {
+    background-color: #dee2e6;
+}
+
+.accordion-header.active {
+    background-color: #ced4da;
+}
+
+.accordion-content {
+    display: none;
+
+    font-size: 14px;
+    background-color: #2965a1;
+    border-radius: 5px;
+    margin-top: 5px;
+    border-bottom: 2px solid black;
+}
+
+.accordion-content.visible {
+    display: block;
+}
+
+.content {
+    flex: 2;
+    padding: 20px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 60%;
+    margin-left: 30em;
+    margin-top: -33em;
+
+}
+
+.accordion-content a p{
+    padding: 10px;
+    font-size: x-large;
+}
+.video-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.video-header h2 {
+    font-size: 20px;
+    color: #343a40;
+}
+
+
+.video-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #6c757d;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .accordion-header {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+
+   </style>
+</head>
+<body>
+
+    <header id="header">
+
+        <div class="logo"> <span style="color: #fa9906;">B</span>aa<span style="color:#fa9906;">i</span>ye</div>
+      
+      <nav class="navbar">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#sections-contect">Contact</a></li>
+              <li><a href="#seccourse">courses</a></li>
+              <li><a href="#about-section">About</a></li>
+              <!-- <li><a href="Admin">Admin</a></li> -->
+          </ul>
+      </nav>
+      <div class="buttons">
+          <button class="btnl"><a href="login.html">Login</button></a>
+          <button class="btnr"><a href="reg.html">Register</button></a>
+      </div>
+       <div class="menu-toggle" id="menu-toggle">
+        
+          
+          <i class="fa-sharp fa-solid fa-bars open-btn"></i>
+      
+       </div>
+      
+      </header>
+    <div class="container">
+        <h1>Course Topics</h1>
+        <div class="accordion">
+            <div class="section">
+                <button class="accordion-header">Introduction Flutter</button>
+                <div class="accordion-content">
+                   <a href=""><p>P1.</p></a> 
+                   <a href=""><p>P1.</p></a> 
+                   <a href=""><p>P1.</p></a> 
+                   <a href=""><p>P1.</p></a> 
+                   
+                </div>
+               
+            </div>
+            <div class="section">
+                <button class="accordion-header">Installation & setup</button>
+                <div class="accordion-content">
+                   <a href=""><p>P1.</p></a> 
+                   <a href=""><p>P1.</p></a> 
+                   <a href=""><p>P1.</p></a> 
+                   <a href=""><p>P1.</p></a> 
+                </div>
+            </div>
+            <div class="section">
+                <button class="accordion-header">Wegited</button>
+                <div class="accordion-content">
+                    <a href=""><p>P1.</p></a> 
+                   <a href=""><p>P1.</p></a> 
+                   <a href=""><p>P1.</p></a> 
+                   <a href=""><p>P1.</p></a> 
+                </div>
+            </div>
+            <div class="section">
+                <button class="accordion-header">Flutter Basic Widgets</button>
+                <div class="accordion-content">
+                   <a href=""><p>P1.</p></a> 
+                   <a href=""><p>P1.</p></a> 
+                   <a href=""><p>P1.</p></a> 
+                   <a href=""><p>P1.</p></a> 
+                </div>
+            </div>
+          
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="video-header">
+            <h2>Flutter Course Introduction</h2>
+          
+        </div>
+        <div class="video-section">
+            <iframe
+                width="100%"
+                height="500"
+                src="https://www.youtube.com/hersi/d"
+                frameborder="0"
+                allowfullscreen
+            ></iframe>
+        </div>
+    </div>
+</div>
+
+    
+    <section>
+        <footer class="footer">
+          <div class="footer-content">
+              <div class="footer-text">
+                  © 2024 Baahiye Online Courses. All rights reserved In.
+              </div>
+              <div class="footer-icons">
+                <a href="#" target="_blank" class="icon"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" target="_blank" class="icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank" class="icon"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank" class="icon"><i class="fab fa-youtube"></i></a>
+              </div>
+          </div>
+      </footer>
+      </section>
+
+    <script >
+     
+const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+
+accordionHeaders.forEach(header => {
+    header.addEventListener('click', () => {
+   
+        header.classList.toggle('active');
+        const content = header.nextElementSibling;
+
+      
+        if (content.classList.contains('visible')) {
+            content.classList.remove('visible');
+        } else {
+            document.querySelectorAll('.accordion-content').forEach(item => {
+                item.classList.remove('visible');
+            });
+            document.querySelectorAll('.accordion-header').forEach(item => {
+                item.classList.remove('active');
+            });
+            content.classList.add('visible');
+        }
+    });
+});
+
+    </script>
+</body>
+</html>
